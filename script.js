@@ -8,7 +8,7 @@ function getWeather() {
         .then(data => {
             document.getElementById('weatherTitle').innerText = 'CURRENT WEATHER';
             document.getElementById('time').innerText = new Date().toLocaleTimeString();
-            document.getElementById('temperature').innerText = `Temperature: ${data.main.temp}°C`;
+            document.getElementById('temperature').innerText = `Temperature: ${data.main.temp}°K`;
             document.getElementById('wind').innerText = `Wind Speed: ${data.wind.speed} m/s`;
             document.getElementById('humidity').innerText = `Humidity: ${data.main.humidity}%`;
             document.getElementById('description').innerText = `Description: ${data.weather[0].description}`;
